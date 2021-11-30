@@ -12,6 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="world_time_apiFlow" doc:id="e74bd406-80f4-4fd0-8d51-41bcb7c584aa" >
 		<http:listener doc:name="Listener" doc:id="7f85b9d3-ce5a-41b2-95fa-fda4e30320e5" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="7d7fb73f-c381-4cca-8116-5e6ad8fc529c" message='"before req"'/>
 		<http:request method="GET" doc:name="Request" doc:id="ad9f6e2a-885e-4ea5-8a9a-6c5e3e7e8142" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
