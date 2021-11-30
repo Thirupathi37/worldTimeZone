@@ -35,7 +35,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<username>TLM2</username>
-						<environment>SandBox</environment>
+						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 						<applicationName>WorldTimeZone_API</applicationName>
