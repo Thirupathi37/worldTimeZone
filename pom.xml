@@ -9,7 +9,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>world_time_api</name>
+	<name>world-time-api</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,13 +34,15 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
+					    <uri>https://anypoint.mulesoft.com</uri>
 						<username>TLM2</username>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 						<applicationName>WorldTimeZone_API</applicationName>
 						<password>Btr@1234</password>
-						<muleVersion>4.1.4</muleVersion>
+						<muleVersion>4.4.0</muleVersion>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
