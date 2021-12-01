@@ -39,7 +39,7 @@
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<applicationName>WorldTimeZone_API</applicationName>
+						<applicationName>worldtimezone-api</applicationName>
 						<password>Btr@1234</password>
 						<muleVersion>4.4.0</muleVersion>
 						<objectStoreV2>true</objectStoreV2>
