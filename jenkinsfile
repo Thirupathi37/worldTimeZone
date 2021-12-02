@@ -1,0 +1,25 @@
+pipeline
+{
+  agent any
+  stages{
+   stage('Build Application'){
+   steps{
+   bat 'mvn clean install'
+   }
+   }
+   
+   stage('Deploy Application To Mule CloudHub'){
+   steps{
+   bat 'mvn package deploy -DmuleDeploy'
+   }
+   }
+   
+   stage('Perform Regression Testing'){
+   steps{
+   bat 'newman run C:\\Users\\admin\\AppData\\Local\\Postman\\app-8.12.4\\WorldTimeZone-Jenkins.postman_collection.json --disable-unicode'
+   }
+   }
+   
+   
+   }
+}
